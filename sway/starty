@@ -1,0 +1,11 @@
+#!/bin/sh
+export TERM='xterm-256color'
+export VISUAL='emacs -nw'
+export EDITOR='emacs -nw'
+export MANPAGER='less'
+export PAGER='less'
+#guix package -m ./dots/manifests/cli.scm
+#guix package -m ./dots/manifests/gui.scm
+. .guix-profile/etc/profile
+#fc-cache -fr
+#sway
