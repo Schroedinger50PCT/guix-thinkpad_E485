@@ -22,7 +22,7 @@
                      xorg xdisorg tor i2p linux pdf fonts inkscape)
 (operating-system
  (kernel linux)
- ;(kernel-arguments '("modprobe.blaklist=pcspkr,snd_pcsp")) ;Kill The Bell
+ ;(kernel-arguments '("modprobe.blacklist=pcspkr,snd_pcsp")) ;Kill The Bell
   (firmware (list linux-firmware)) ;; ToDo: clean out unused firmware
   (host-name "cantaloupe")
   (timezone "Europe/Berlin")
