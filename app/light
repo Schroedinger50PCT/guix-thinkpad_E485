@@ -1,0 +1,2 @@
+#!/bin/sh
+echo 239 > /sys/class/backlight/amdgpu_bl0/brightness
