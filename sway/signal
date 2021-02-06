@@ -1,3 +1,0 @@
-#!/bin/sh
-setsid -f flatpak run org.signal.Signal
-exit

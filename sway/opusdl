@@ -1,2 +1,0 @@
-#!/bin/sh
-torsocks -i youtube-dl -f bestaudio --audio-quality 0 --audio-format=opus -x

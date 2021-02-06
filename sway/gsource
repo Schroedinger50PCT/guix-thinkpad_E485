@@ -1,3 +1,0 @@
-#!/bin/sh
-. .guix-profile/etc/profile
-
