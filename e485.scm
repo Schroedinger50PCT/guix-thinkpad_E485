@@ -42,10 +42,11 @@
                         (supplementary-groups '("wheel" "netdev" "audio" "video" "lp")) 
                         (home-directory "/home/bob") 
                         (shell (file-append gash "/bin/gash")))
-	  ;(user-account (name "root") 				; this is just creating a second entry for root in /etc/passwd, the old one using bash is still present after every rebuild 
-          ;              (comment "I_am_Root")                  ; the correct solution would be to rebuild guix with the default user shell set to gash in shadow.scm
-          ;              (group "root")  
-	  ;              (shell (file-append gash "/bin/gash")))
+	  (user-account (name "root") 				
+                        (comment "I_am_Root")                  
+                        (uid 0)
+			(group "root")  
+	                (shell (file-append gash "/bin/gash")))
 	  ) %base-user-accounts))
   (issue "")
   (packages (append (list alsa-lib alsa-utils acpid alacritty alpine
